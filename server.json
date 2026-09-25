@@ -4,5 +4,5 @@
   "description": "Persistent local, repository-scoped memory for MCP-compatible AI coding agents. Stores corrections, rules, conventions, decisions, and bug-fix lessons in SQLite without cloud services or API keys.",
   "repository": {"url": "https://github.com/Umarjaum/repo-memory-mcp", "source": "github"},
   "version": "0.1.0",
-  "packages": [{"registryType": "pypi", "identifier": "repo-memory-mcp", "version": "0.1.0", "transport": {"type": "stdio"}}]
+  "packages": [{"registryType": "pypi", "identifier": "repo-memory-mcp-ai", "version": "0.1.0", "transport": {"type": "stdio"}}]
 }

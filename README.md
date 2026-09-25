@@ -34,8 +34,8 @@ repo-memory doctor
 After publishing the package to PyPI:
 
 ```bash
-pip install repo-memory-mcp
-uvx repo-memory-mcp
+pip install repo-memory-mcp-ai
+uvx repo-memory-mcp-ai
 ```
 
 The published-package commands should only be used once the package is publicly available.

@@ -2,7 +2,7 @@
 
 ## Python package
 
-Build and publish the package to PyPI first. The official MCP Registry stores metadata and points to a public package; it does not host package artifacts.
+Build and publish the `repo-memory-mcp-ai` package to PyPI first. The official MCP Registry stores metadata and points to a public package; it does not host package artifacts.
 
 ```bash
 python -m build
@@ -42,7 +42,7 @@ Sources: [MCP Registry about](https://modelcontextprotocol.io/registry/about), [
 ## Repository publishing checklist
 
 1. Push the repository to GitHub with public source, README, tests, and license.
-2. Publish `repo-memory-mcp` to PyPI.
+2. Publish `repo-memory-mcp-ai` to PyPI.
 3. Validate and publish `server.json` with `mcp-publisher`.
 4. Connect the GitHub repository to Cloudflare Pages with `website/` as the output directory.
 5. Replace placeholder canonical URLs after Pages assigns the final project URL or custom domain.
