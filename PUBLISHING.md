@@ -31,7 +31,7 @@ The Registry is currently in preview. Published versions are immutable and unpub
 
 ## Cloudflare Pages
 
-Deploy the `website/` directory as the Pages output directory. The site is static and requires no build command. Update the canonical URL and sitemap URL in `website/index.html` and `website/robots.txt` if a custom domain is attached.
+The repository includes `.github/workflows/cloudflare-pages.yml`. It deploys the `website/` directory on every push to `main` using the Pages project name `repo-memory-mcp`; the site is static and requires no build command. The workflow needs two GitHub Actions secrets: `CLOUDFLARE_API_TOKEN` with Pages deployment permission and `CLOUDFLARE_ACCOUNT_ID`. Wrangler creates the Pages project on the first deployment when the token has the required account permissions. Update the canonical URL and sitemap URL in `website/index.html` and `website/robots.txt` if a custom domain is attached.
 
 ## GitHub Actions
 
