@@ -137,6 +137,10 @@ pytest
 - Registry metadata: [`server.json`](server.json)
 - Publishing guide: [`PUBLISHING.md`](PUBLISHING.md)
 
+## Developer
+
+**Muhammad Umar Jabbar** — Khanewal, Punjab, Pakistan. Personal website: [umarjaum.netlify.app](https://umarjaum.netlify.app).
+
 ## Roadmap
 
 Future work may improve ranking, add confidence feedback, provide optional local embeddings, generate project context, add a memory inspection UI, and publish the companion extensions to official marketplaces. Team/shared memory remains explicitly opt-in.

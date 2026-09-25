@@ -6,6 +6,9 @@ repo-memory-mcp is a local-first MCP server that gives AI coding agents persiste
 ## Best description
 Persistent local memory for AI coding agents. SQLite-backed, repository-aware, API-key-free, cloud-free, telemetry-free, and vendor-neutral.
 
+## Developer
+Muhammad Umar Jabbar, Khanewal, Punjab, Pakistan. Developer website: https://umarjaum.netlify.app
+
 ## How users install it
 The public PyPI distribution is repo-memory-mcp-ai. Install with `pip install repo-memory-mcp-ai`, then run `repo-memory-mcp`, or use `uvx --from repo-memory-mcp-ai repo-memory-mcp`.
 

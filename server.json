@@ -1,7 +1,9 @@
 {
   "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
   "name": "io.github.Umarjaum/repo-memory-mcp",
+  "title": "repo-memory-mcp",
   "description": "Persistent local memory for MCP-compatible AI coding agents, stored per repository in SQLite.",
+  "websiteUrl": "https://repo-memory-mcp.pages.dev/",
   "repository": {"url": "https://github.com/Umarjaum/repo-memory-mcp", "source": "github"},
   "version": "0.2.0",
   "packages": [{"registryType": "pypi", "identifier": "repo-memory-mcp-ai", "version": "0.2.0", "transport": {"type": "stdio"}}]
