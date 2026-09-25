@@ -1,0 +1,21 @@
+{
+  "name": "repo-memory",
+  "displayName": "repo-memory-mcp",
+  "description": "Setup helpers for the local repo-memory-mcp server.",
+  "version": "0.1.0",
+  "publisher": "repo-memory",
+  "license": "MIT",
+  "repository": "https://github.com/Umarjaum/repo-memory-mcp",
+  "engines": {"vscode": "^1.85.0"},
+  "categories": ["Other", "Machine Learning"],
+  "keywords": ["MCP", "AI", "memory", "coding agent", "repository"],
+  "activationEvents": ["onCommand:repoMemory.copyMcpConfig", "onCommand:repoMemory.openDocs", "onCommand:repoMemory.copyStartupInstruction"],
+  "main": "./extension.js",
+  "contributes": {
+    "commands": [
+      {"command": "repoMemory.copyMcpConfig", "title": "Repo Memory: Copy MCP Configuration"},
+      {"command": "repoMemory.copyStartupInstruction", "title": "Repo Memory: Copy Startup Instruction"},
+      {"command": "repoMemory.openDocs", "title": "Repo Memory: Open Documentation"}
+    ]
+  }
+}

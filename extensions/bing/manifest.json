@@ -1,0 +1,11 @@
+{
+  "manifest_version": 3,
+  "name": "Repo Memory Prompt Helper",
+  "version": "0.1.0",
+  "description": "Copy selected Bing research text as a repo-memory prompt without network access.",
+  "permissions": ["contextMenus", "storage"],
+  "host_permissions": ["https://www.bing.com/*"],
+  "background": {"service_worker": "background.js"},
+  "action": {"default_title": "Repo Memory Prompt Helper", "default_popup": "popup.html"},
+  "icons": {}
+}

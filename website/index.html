@@ -1,75 +1,25 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>repo-memory-mcp — Persistent local memory for AI coding agents</title>
-  <meta name="description" content="repo-memory-mcp gives MCP-compatible AI coding agents persistent, repository-scoped memory for corrections, rules, decisions, and coding conventions.">
-  <meta name="keywords" content="MCP server, AI coding agent memory, repository memory, Claude Code memory, Cursor MCP, local AI developer tools, SQLite MCP server">
-  <meta name="theme-color" content="#17211b">
-  <link rel="canonical" href="https://repo-memory-mcp.pages.dev/">
-  <link rel="manifest" href="/manifest.webmanifest">
-  <link rel="llms" href="/llms.txt">
-  <meta property="og:title" content="repo-memory-mcp — Persistent local memory for AI coding agents">
-  <meta property="og:description" content="Teach your coding agent once. Let your repository remember.">
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://repo-memory-mcp.pages.dev/">
-  <meta property="og:site_name" content="repo-memory-mcp">
-  <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="repo-memory-mcp">
-  <meta name="twitter:description" content="Persistent local memory for AI coding agents.">
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@graph": [
-      {
-        "@type": "SoftwareApplication",
-        "name": "repo-memory-mcp",
-        "applicationCategory": "DeveloperApplication",
-        "operatingSystem": "Cross-platform",
-        "description": "Persistent local, repository-scoped memory for MCP-compatible AI coding agents.",
-        "softwareVersion": "0.2.0",
-        "license": "https://opensource.org/licenses/MIT",
-        "codeRepository": "https://github.com/Umarjaum/repo-memory-mcp",
-        "downloadUrl": "https://pypi.org/project/repo-memory-mcp-ai/",
-        "isAccessibleForFree": true,
-        "keywords": "MCP server, AI coding agent memory, repository memory, local developer tool"
-      },
-      {
-        "@type": "FAQPage",
-        "mainEntity": [
-          {"@type":"Question","name":"Does repo-memory-mcp read every AI conversation automatically?","acceptedAnswer":{"@type":"Answer","text":"No. MCP hosts decide when tools are called. Agents explicitly call startup context, recall, remember, update, and archive tools."}},
-          {"@type":"Question","name":"Where is memory stored?","acceptedAnswer":{"@type":"Answer","text":"Memory is stored locally in .repo-memory/memory.db inside the detected repository."}},
-          {"@type":"Question","name":"Does it require an API key or cloud account?","acceptedAnswer":{"@type":"Answer","text":"No. The server uses local SQLite and deterministic search without external APIs, embeddings, telemetry, or remote databases."}}
-        ]
-      }
-    ]
-  }
-  </script>
-  <style>
-    :root{--ink:#17211b;--muted:#647066;--paper:#f5f7f1;--lime:#d6f36b;--blue:#b7d7ff;--line:#dfe6dc}
-    *{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink);font-family:Inter,ui-sans-serif,system-ui,sans-serif;line-height:1.5}
-    main{max-width:1180px;margin:auto;padding:24px 24px 80px}nav{display:flex;justify-content:space-between;align-items:center;padding:18px 0}nav a{color:var(--ink);text-decoration:none;margin-left:24px;font-size:14px}.brand{font-weight:800;letter-spacing:-.03em}.eyebrow{text-transform:uppercase;letter-spacing:.14em;font-size:12px;color:var(--muted)}
-    h1{font-size:clamp(48px,9vw,112px);line-height:.9;letter-spacing:-.08em;max-width:850px;margin:28px 0}h2{font-size:clamp(30px,5vw,58px);line-height:1;letter-spacing:-.06em;margin:16px 0}.lede{font-size:clamp(20px,3vw,32px);line-height:1.12;max-width:680px;color:#425047}.hero{padding:90px 0 80px}.pill{display:inline-block;background:var(--lime);padding:10px 14px;border-radius:999px;font-size:13px;font-weight:700}
-    .actions{display:flex;gap:12px;margin-top:34px;flex-wrap:wrap}.button{display:inline-block;padding:14px 18px;border-radius:10px;background:var(--ink);color:#fff;text-decoration:none;font-weight:700}.button.alt{background:transparent;color:var(--ink);border:1px solid #b9c4b7}.button:focus-visible,a:focus-visible{outline:3px solid #4f7c22;outline-offset:3px}
-    .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:40px}.card{background:#fff;border:1px solid var(--line);border-radius:18px;padding:24px;min-height:160px}.card h3{margin-top:0}.card code{background:#eef3e9;padding:2px 5px;border-radius:5px}
-    .band{margin:70px 0;padding:42px;border-radius:24px;background:var(--blue);display:grid;grid-template-columns:1fr 1fr;gap:30px}.code{background:#17211b;color:#d6f36b;border-radius:14px;padding:22px;font:14px/1.6 ui-monospace,monospace;overflow:auto;white-space:pre-wrap}.faq{margin-top:70px;max-width:850px}.faq details{background:#fff;border:1px solid var(--line);border-radius:12px;padding:18px 20px;margin:10px 0}.faq summary{cursor:pointer;font-weight:700}.faq p{color:#425047}
-    footer{border-top:1px solid #d5ddd2;padding-top:20px;color:var(--muted);font-size:13px}@media(max-width:760px){.grid,.band{grid-template-columns:1fr}.hero{padding-top:55px}nav a{margin-left:10px}}
-  </style>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>repo-memory-mcp — Persistent local memory for AI coding agents</title>
+<meta name="description" content="Persistent repository-scoped memory for Claude, Cursor, VS Code, Cline, Windsurf, and other MCP-compatible AI coding agents.">
+<meta name="keywords" content="MCP server, AI coding agent memory, Claude Code memory, Cursor MCP, VS Code MCP, repository memory, local AI developer tool">
+<link rel="canonical" href="https://repo-memory-mcp.pages.dev/"><link rel="stylesheet" href="/styles.css"><link rel="manifest" href="/manifest.webmanifest"><link rel="llms" href="/llms.txt"><script defer src="/site.js"></script>
+<meta property="og:title" content="repo-memory-mcp — Persistent memory for AI coding agents"><meta property="og:description" content="Teach your coding agent once. Let your repository remember."><meta property="og:type" content="website"><meta property="og:url" content="https://repo-memory-mcp.pages.dev/"><meta property="og:image" content="https://repo-memory-mcp.pages.dev/assets/hero-memory.jpg"><meta name="twitter:card" content="summary_large_image">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareApplication","name":"repo-memory-mcp","applicationCategory":"DeveloperApplication","operatingSystem":"Cross-platform","description":"Persistent local, repository-scoped memory for MCP-compatible AI coding agents.","softwareVersion":"0.2.0","license":"https://opensource.org/licenses/MIT","codeRepository":"https://github.com/Umarjaum/repo-memory-mcp","downloadUrl":"https://pypi.org/project/repo-memory-mcp-ai/","isAccessibleForFree":true,"keywords":"MCP server, AI coding agent memory, repository memory, Claude Code, Cursor, VS Code"}</script>
 </head>
-<body>
-  <main>
-    <nav aria-label="Primary navigation"><div class="brand">repo-memory-mcp</div><div><a href="https://github.com/Umarjaum/repo-memory-mcp">GitHub</a><a href="https://pypi.org/project/repo-memory-mcp-ai/">PyPI</a></div></nav>
-    <section class="hero"><span class="pill">LOCAL · PRIVATE · MCP-NATIVE</span><h1>Teach your coding agent once. Let your repository remember.</h1><p class="lede">Persistent, repository-scoped memory for AI coding agents—corrections, rules, conventions, and decisions kept close to the code.</p><div class="actions"><a class="button" href="#install">Install in two minutes</a><a class="button alt" href="https://github.com/Umarjaum/repo-memory-mcp">View the source</a></div></section>
-    <section aria-label="Benefits" class="grid"><article class="card"><h3>Repository-aware</h3><p>Each workspace gets a stable identity and a local SQLite database. Unrelated repositories do not share memories.</p></article><article class="card"><h3>Explicit by design</h3><p>MCP hosts decide when tools are called. Startup context, recall, remember, update, and archive are deliberate operations.</p></article><article class="card"><h3>No cloud required</h3><p>No API keys, external embeddings, remote database, telemetry, or background upload. Only submitted content is inspected.</p></article></section>
-    <section id="install" class="band"><div><span class="eyebrow">Start here</span><h2>Give your agent a memory it can actually use.</h2><p>Install the public PyPI distribution, add the stdio server to your MCP client, and ask the agent to call <code>get_startup_context</code> at the beginning of each session.</p></div><pre class="code">pip install repo-memory-mcp-ai
+<body><main>
+<nav class="site-nav"><a class="brand" href="/">repo-memory-mcp</a><div class="nav-links"><a href="/docs.html">Docs</a><a href="/clients.html">Clients</a><a href="/contribute.html">Contribute</a><a href="https://github.com/Umarjaum/repo-memory-mcp">GitHub ↗</a></div></nav>
+<section class="hero"><div><span class="pill">LOCAL · PRIVATE · MCP-NATIVE</span><h1>Teach your coding agent once. Let your repository remember.</h1><p class="lede">Persistent, repository-scoped memory for AI coding agents—corrections, rules, conventions, and decisions kept close to the code.</p><div class="actions"><a class="button" href="/docs.html#quickstart">Install in two minutes</a><a class="button alt" href="/clients.html">Choose your client</a></div></div><img class="hero-art" src="/assets/hero-memory.jpg" alt="Abstract illustration of a repository connected to local memory cards and AI context" width="1200" height="675"></section>
+<section class="grid" aria-label="Benefits"><article class="card"><h3>Repository-aware</h3><p>Each workspace gets a stable identity and a local SQLite database. Unrelated repositories do not share memories.</p></article><article class="card"><h3>Explicit by design</h3><p>MCP hosts decide when tools are called. Startup context, recall, remember, update, and archive are deliberate operations.</p></article><article class="card"><h3>Open source</h3><p>MIT licensed, inspectable, forkable, and open to contributions from developers, client authors, and documentation writers.</p></article></section>
+<section id="quickstart" class="band"><div><span class="eyebrow">Start here</span><h2>Give your agent a memory it can actually use.</h2><p>Install the public package, add the stdio server to your MCP client, and ask the agent to call <code>get_startup_context</code> at the beginning of each session.</p></div><div class="code-wrap"><button class="copy" data-copy="pip install repo-memory-mcp-ai">Copy</button><pre class="code">pip install repo-memory-mcp-ai
 repo-memory doctor
 
 # zero-install option
-uvx --from repo-memory-mcp-ai repo-memory-mcp</pre></section>
-    <section><span class="eyebrow">How it works</span><div class="grid"><article class="card"><h3>01 · Start</h3><p>Call <code>get_startup_context()</code> to load only the most important repository guidance.</p></article><article class="card"><h3>02 · Teach</h3><p>Call <code>remember_correction()</code> or <code>remember_rule()</code> when a lesson should survive the current session.</p></article><article class="card"><h3>03 · Recall</h3><p>Call <code>recall_memory(query)</code> when the current task needs relevant project history.</p></article></div></section>
-    <section class="faq"><span class="eyebrow">Frequently asked questions</span><details><summary>Does it automatically read every AI conversation?</summary><p>No. MCP hosts decide when tools are called. The agent explicitly chooses when to load, search, store, update, or archive memory.</p></details><details><summary>Where does the memory live?</summary><p>In <code>.repo-memory/memory.db</code> inside the detected repository. The directory is ignored by Git by default.</p></details><details><summary>Which coding agents can use it?</summary><p>It is vendor-neutral and works with MCP-compatible hosts such as Claude Code, Cursor, Cline, and Windsurf, subject to each host’s configuration format.</p></details></section>
-    <footer>Open source under the MIT License · <a href="https://github.com/Umarjaum/repo-memory-mcp">Source on GitHub</a> · <a href="https://pypi.org/project/repo-memory-mcp-ai/">Install from PyPI</a></footer>
-  </main>
-</body>
-</html>
+uvx --from repo-memory-mcp-ai repo-memory-mcp</pre></div></section>
+<section class="section"><span class="eyebrow">How it works</span><div class="grid"><article class="card"><h3>01 · Start</h3><p>Call <code>get_startup_context()</code> to load high-value repository guidance.</p></article><article class="card"><h3>02 · Teach</h3><p>Call <code>remember_correction()</code> or <code>remember_rule()</code> when a lesson should survive.</p></article><article class="card"><h3>03 · Recall</h3><p>Call <code>recall_memory(query)</code> when the current task needs project history.</p></article></div></section>
+<section class="band"><div><span class="eyebrow">Built for the ecosystem</span><h2>Claude. Cursor. VS Code. Any MCP host.</h2><p>Use the core server directly, install the companion VS Code extension, or use the browser companion to prepare research notes for your agent.</p><a class="button" href="/clients.html">See client setup</a></div><img class="hero-art" src="/assets/mcp-workflow.jpg" alt="Conceptual illustration of an AI coding agent, local repository memory, and returning context" width="900" height="600"></section>
+<section class="faq"><span class="eyebrow">Questions</span><details><summary>Does it automatically read every AI conversation?</summary><p>No. MCP hosts decide when tools are called. The agent explicitly chooses when to load, search, store, update, or archive memory.</p></details><details><summary>Where does the memory live?</summary><p>In <code>.repo-memory/memory.db</code> inside the detected repository. The directory is ignored by Git by default.</p></details><details><summary>Can I contribute?</summary><p>Yes. The project is MIT licensed. Add client examples, tests, docs, bug fixes, or new integrations through GitHub pull requests.</p></details></section>
+<footer class="site-footer"><span>MIT open source · <a href="/contribute.html">Contribute</a></span><span><a href="https://pypi.org/project/repo-memory-mcp-ai/">PyPI</a> · <a href="https://github.com/Umarjaum/repo-memory-mcp">GitHub</a></span></footer>
+</main></body></html>

@@ -15,12 +15,22 @@ Use an MCP stdio server configuration with command `uvx` and args `--from`, `rep
 ## Core workflow
 Call `get_startup_context` at the start of a coding session. Store durable lessons with `remember_correction`, `remember_rule`, and `remember_decision`. Search with `recall_memory`. Update or archive stale guidance with `update_memory` and `forget_memory`.
 
+## Supported client guidance
+The public site has setup guides for Claude, Cursor, VS Code, Cline, Windsurf, and other MCP-compatible hosts. A companion VS Code extension copies the setup JSON and startup instruction. A privacy-safe Manifest V3 Bing-compatible browser companion formats selected research text as a repo-memory prompt; it does not directly invoke local MCP.
+
 ## Important behavior
 MCP hosts decide when tools are called. The server does not automatically intercept every AI conversation. Memories are stored locally in `.repo-memory/memory.db` for the detected repository. Do not store secrets.
 
+## Open source
+MIT licensed. Contributions of code, tests, client examples, documentation, security review, and translations are welcome.
+
 ## Links
 - Website: https://repo-memory-mcp.pages.dev/
+- Documentation: https://repo-memory-mcp.pages.dev/docs.html
+- Client guides: https://repo-memory-mcp.pages.dev/clients.html
+- Extensions: https://repo-memory-mcp.pages.dev/extensions.html
+- Contributions: https://repo-memory-mcp.pages.dev/contribute.html
 - Source: https://github.com/Umarjaum/repo-memory-mcp
 - PyPI: https://pypi.org/project/repo-memory-mcp-ai/
 - Registry metadata: https://github.com/Umarjaum/repo-memory-mcp/blob/main/server.json
-- Documentation: https://github.com/Umarjaum/repo-memory-mcp#readme
+- Documentation README: https://github.com/Umarjaum/repo-memory-mcp#readme

@@ -128,6 +128,10 @@ pytest
 ## Discovery and publishing
 
 - Project site: [repo-memory-mcp.pages.dev](https://repo-memory-mcp.pages.dev/)
+- Documentation: [quickstart and tools](https://repo-memory-mcp.pages.dev/docs.html)
+- Client guides: [Claude, Cursor, VS Code, Cline, and Windsurf](https://repo-memory-mcp.pages.dev/clients.html)
+- Extensions: [VS Code and Bing-compatible browser companion](https://repo-memory-mcp.pages.dev/extensions.html)
+- Contributions: [open-source contribution guide](https://repo-memory-mcp.pages.dev/contribute.html)
 - Source: [GitHub](https://github.com/Umarjaum/repo-memory-mcp)
 - Package: [PyPI](https://pypi.org/project/repo-memory-mcp-ai/)
 - Registry metadata: [`server.json`](server.json)
@@ -135,7 +139,14 @@ pytest
 
 ## Roadmap
 
-Future work may improve ranking, add confidence feedback, provide optional local embeddings, generate project context, and add a memory inspection UI. Team/shared memory remains explicitly opt-in.
+Future work may improve ranking, add confidence feedback, provide optional local embeddings, generate project context, add a memory inspection UI, and publish the companion extensions to official marketplaces. Team/shared memory remains explicitly opt-in.
+
+## Companion extensions
+
+- [`extensions/vscode`](extensions/vscode/) provides local setup commands for VS Code.
+- [`extensions/bing`](extensions/bing/) provides a privacy-safe Manifest V3 context-menu helper for turning selected Bing research into a repo-memory prompt.
+
+The browser companion intentionally does not invoke the local stdio MCP process. Direct browser-to-MCP integration would require a separately reviewed native-messaging bridge.
 
 ## License
 
