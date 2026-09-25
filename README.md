@@ -127,11 +127,11 @@ pytest
 
 ## Discovery and publishing
 
-- Project site: [repo-memory-mcp.pages.dev](https://repo-memory-mcp.pages.dev/)
-- Documentation: [quickstart and tools](https://repo-memory-mcp.pages.dev/docs.html)
-- Client guides: [Claude, Cursor, VS Code, Cline, and Windsurf](https://repo-memory-mcp.pages.dev/clients.html)
-- Extensions: [VS Code and Bing-compatible browser companion](https://repo-memory-mcp.pages.dev/extensions.html)
-- Contributions: [open-source contribution guide](https://repo-memory-mcp.pages.dev/contribute.html)
+- Project site: [repo-memory-mcp.negoshades.workers.dev](https://repo-memory-mcp.negoshades.workers.dev/)
+- Documentation: [quickstart and tools](https://repo-memory-mcp.negoshades.workers.dev/docs.html)
+- Client guides: [Claude, Cursor, VS Code, Cline, and Windsurf](https://repo-memory-mcp.negoshades.workers.dev/clients.html)
+- Extensions: [VS Code and Bing-compatible browser companion](https://repo-memory-mcp.negoshades.workers.dev/extensions.html)
+- Contributions: [open-source contribution guide](https://repo-memory-mcp.negoshades.workers.dev/contribute.html)
 - Source: [GitHub](https://github.com/Umarjaum/repo-memory-mcp)
 - Package: [PyPI](https://pypi.org/project/repo-memory-mcp-ai/)
 - Registry metadata: [`server.json`](server.json)

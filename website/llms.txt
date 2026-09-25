@@ -28,11 +28,11 @@ MCP hosts decide when tools are called. The server does not automatically interc
 MIT licensed. Contributions of code, tests, client examples, documentation, security review, and translations are welcome.
 
 ## Links
-- Website: https://repo-memory-mcp.pages.dev/
-- Documentation: https://repo-memory-mcp.pages.dev/docs.html
-- Client guides: https://repo-memory-mcp.pages.dev/clients.html
-- Extensions: https://repo-memory-mcp.pages.dev/extensions.html
-- Contributions: https://repo-memory-mcp.pages.dev/contribute.html
+- Website: https://repo-memory-mcp.negoshades.workers.dev/
+- Documentation: https://repo-memory-mcp.negoshades.workers.dev/docs.html
+- Client guides: https://repo-memory-mcp.negoshades.workers.dev/clients.html
+- Extensions: https://repo-memory-mcp.negoshades.workers.dev/extensions.html
+- Contributions: https://repo-memory-mcp.negoshades.workers.dev/contribute.html
 - Source: https://github.com/Umarjaum/repo-memory-mcp
 - PyPI: https://pypi.org/project/repo-memory-mcp-ai/
 - Registry metadata: https://github.com/Umarjaum/repo-memory-mcp/blob/main/server.json
