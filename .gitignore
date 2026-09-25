@@ -1,0 +1,10 @@
+.repo-memory/
+.repo_memory/
+*.repo-memory.*
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+dist/
+build/
+*.egg-info/

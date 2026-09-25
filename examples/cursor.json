@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "repo-memory": {
+      "command": "uvx",
+      "args": ["repo-memory-mcp"]
+    }
+  }
+}

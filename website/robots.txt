@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://repo-memory-mcp.pages.dev/sitemap.xml
