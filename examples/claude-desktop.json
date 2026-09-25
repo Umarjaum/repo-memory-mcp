@@ -2,7 +2,7 @@
   "mcpServers": {
     "repo-memory": {
       "command": "uvx",
-      "args": ["repo-memory-mcp"]
+      "args": ["--from", "repo-memory-mcp-ai", "repo-memory-mcp"]
     }
   }
 }

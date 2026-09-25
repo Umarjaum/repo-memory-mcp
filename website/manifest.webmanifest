@@ -1,0 +1,10 @@
+{
+  "name": "repo-memory-mcp",
+  "short_name": "repo-memory",
+  "description": "Persistent local memory for AI coding agents.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#f5f7f1",
+  "theme_color": "#17211b",
+  "icons": []
+}
